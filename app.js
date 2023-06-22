@@ -18,6 +18,12 @@ require("./config")(app);
 const indexRoutes = require("./routes/index.routes");
 app.use("/api", indexRoutes);
 
+const courtRoutes = require("./routes/court.routes");
+app.use("/courts", courtRoutes);
+
+const bookRoutes = require("./routes/book.routes");
+app.use("/bookings", bookRoutes);
+
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
