@@ -24,6 +24,9 @@ app.use("/courts", courtRoutes);
 const bookRoutes = require("./routes/book.routes");
 app.use("/bookings", bookRoutes);
 
+const profileRoutes = require("./routes/profile.routes");
+app.use("/profile", profileRoutes);
+
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 

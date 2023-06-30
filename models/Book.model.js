@@ -1,27 +1,29 @@
-const {Schema, model} = require("mongoose");
+const { Schema, model } = require("mongoose");
 
-const bookSchema = ({
+const bookSchema = new Schema({
     user: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
+      type: Schema.Types.ObjectId,
+      ref: "User",
     },
     court: {
-        type: Schema.Types.ObjectId,
-        ref: "Court"
+      type: Schema.Types.ObjectId,
+      ref: "Court",
     },
     startTime: {
-        type: Date,
-        required: true
+      type: String,
+      required: true,
     },
     endTime: {
-        type: Date,
-        required: true
+      type: String,
+      required: true,
     },
     date: {
-        type: Date,
-        required: true
-    }
-})
+      type: String,
+      required: true,
+    },
+  },
+  {timestamps: true}
+  );
 
 const Book = model("Book", bookSchema);
 
