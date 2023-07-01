@@ -11,6 +11,7 @@ router.get("/:userId", async (req, res) => {
     const response = await User.findById(req.params.userId).populate(
       "reservations"
     );
+    console.log(response)
     res.status(200).json(response);
   } catch (e) {
     res.status(500).json({ message: e });

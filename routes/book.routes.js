@@ -63,7 +63,7 @@ router.patch("/edit/:reservationId", async (req, res) => {
 
 //DELETE reservation
 
-router.delete("/:announcementId", async (req, res) => {
+router.delete("/:reservationId", async (req, res) => {
   try {
     await Book.findByIdAndDelete(req.params.reservationId);
     res.status(200).json({
