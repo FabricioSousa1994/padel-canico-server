@@ -12,7 +12,7 @@ const court = [
 
     {
         name: "Alberto Oculista",
-        picture_url: "https://res.cloudinary.com/duy4rj4hd/image/upload/v1687130318/padel-canico/court_alberto_oculista_cfx2eh.jpg",
+        picture_url: "https://res.cloudinary.com/duy4rj4hd/image/upload/v1687130304/padel-canico/court_sao_roque_qjr99x.jpg",
         description: "Exterior e panorâmico"
     }
 ]
