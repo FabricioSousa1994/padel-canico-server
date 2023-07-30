@@ -18,13 +18,9 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Name is required."],
     },
-      phone: {
-        type: Number,
-        required: true
-      },
-    reservations: {
-      type: Schema.Types.ObjectId,
-      ref: "Book"
+    phone: {
+      type: Number,
+      required: true
     }
   },
   {
