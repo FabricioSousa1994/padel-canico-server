@@ -9,7 +9,7 @@ const saltRounds = 10;
 router.get("/:userId", async (req, res) => {
   try {
     const response = await User.findById(req.params.userId).populate(
-      "reservations"
+      "court"
     );
     console.log(response)
     res.status(200).json(response);
